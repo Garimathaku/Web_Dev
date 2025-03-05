@@ -9,9 +9,10 @@
     grid-template-areas:
         "nav header header"
         "nav article aside"
+        "nav singlecard aside"
         "nav footer footer";
     grid-template-columns: 1fr 4fr 1.5fr;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto 1fr auto auto;
     height: 100vh;
     gap: 5px;
     padding: 10px;
@@ -56,6 +57,49 @@
     grid-area: aside;
     background-color: #faf3d4;
     padding: 20px;
+}
+
+.single-card {
+    grid-area: singlecard;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: #ffffff;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+.card p {
+    padding: 0 15px;
+    font-size: 14px;
+    color: #666;
+}
+
+.card button {
+    background: #9ccc2c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 15px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .footer {
