@@ -12,10 +12,10 @@
         "nav footer footer";
     grid-template-columns: 1fr 4fr 1.5fr;
     grid-template-rows: auto 1fr auto;
-    height: 100vh; 
-    gap: 5px; 
-    padding: 10px; 
-    background-color: #f1f1f1; 
+    height: 100vh;
+    gap: 5px;
+    padding: 10px;
+    background-color: #f1f1f1;
 }
 
 .nav {
@@ -34,6 +34,22 @@
     grid-area: article;
     background-color: white;
     padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border: 3px solid black;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
 }
 
 .aside {
